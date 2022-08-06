@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+
+</head>
+<style>
+
+   
+    ol li{
+        background-color: yellow;
+    }
+    div > p{
+        background-color: yellow;
+    } 
+    .blue{
+        color:blue;
+    }
+    #green{
+        color:green;
+    }
+    h4,h5{
+        color:#36c;font-weight:normal;letter-spacing:.2cm;margin-bottom:1 em;text-transform:lowercase;
+    }
+
+</style>
+<body>
+    <P><h1>The Types of Selector</h1></P>
+    <br><br>
+    <h2 style="background:rgb(255, 0, 212);text-align: center;" >      Descendant Selector</h2>
+    <ol>
+        <li>sentence 1</li>
+        <li>sentence 2</li>
+        <ul>
+            <Li>sub sentence 1</Li>
+            <li>sub sentence 2</li>
+        </ul>
+        <li>sentence 3</li>
+    </ol>
+    <br>
+    <br>
+    <h2 style="background:rgb(255, 0, 225);text-align: center;">Child Selector</h2>
+    <div>
+        <P>This is one more type of selector which is very similar to descendants but have different functionality</P>
+        <div>
+            This rule will render all the paragraphs in black if they are direct child of body element
+        </div>
+       <p> Other paragraphs put inside other element like div or td etc.would not have any effect of this rule </P>
+    </div>
+
+     <h2 style="background:rgb(255, 0, 242);text-align: center;">Class Selector</h2>
+    <h3 class="blue">we are in class selector</h3>
+
+    <br><br>
+    <h2 style="background:rgb(255, 0, 208);text-align: center;">ID Selector</h2>
+    <h3 id="green">we are in Id selector</h3>
+
+    <br><br>
+    <h2 style="background:rgb(255, 0, 208);text-align: center;">grouping Selector</h2>
+    <h4>we are in group selector</h4><br>
+
+    <h5>you can apply a style to many selector if you like just separete the selector with a comma as given in the following example:</h5>
+</body>
+</html>
